@@ -1,0 +1,376 @@
+
+/*------land.html------*/
+.land_wrap{
+	width: 100%;
+	background: url(../img/land.jpg) no-repeat;
+	background-size: cover;
+}
+img.logo{
+	width: 32%;
+	margin:0.85rem auto 0;
+}
+h1.title{
+	color:#fff;
+	font-size: .18rem;
+	margin:.1rem 0 .04rem 0;
+	letter-spacing: 5px;
+}
+h1.title,p.first,p.last{
+	text-align: center;
+}
+p.first{
+	color: rgba(255,255,255,0.3);
+	letter-spacing: 2px;
+}
+
+
+.btn_wrap{
+	width: 60%;
+	margin:26% auto 3%;
+}
+.btn_wrap button{
+	width: 100%;
+	height: .4rem;
+	line-height: .4rem;
+	border-radius: .06rem;
+	margin-bottom: 8%;
+	background: rgba(255,255,255,0.4);
+}
+.btn_wrap button.on{
+	background: #10CBF3;
+}
+.btn_wrap button a{
+	width: 100%;
+	height: 100%;
+	font-size: .2rem;
+	color:#fff;
+}
+.btn_wrap button:nth-child(1) a img{
+	width: 12%;
+}
+.btn_wrap button img{
+	display: inline-block;
+	width: 14%;
+	margin-right: 3%;
+	vertical-align: middle;
+}
+img.txt{
+	width: 50%;
+	margin:0 auto;
+	display: block;
+}
+p.last{
+	position: absolute;
+	bottom:3%;
+	left:50%;
+	margin-left: -25%;
+	color:rgba(255,255,255,.6);
+	font-size: .1rem;
+}
+
+
+
+/*---------list_policies.html---------*/
+p.tip{
+	padding:4% 5%;
+	width: 100%;
+	font-size: .14rem;
+	color:#888;
+	border-top:1px solid #ccc;
+}
+
+
+.order{
+	width: 100%;
+	padding:3% 5%;
+	background: #fff;
+}
+.order h1{
+	font-size: .18rem;
+	color: #333;
+	font-weight: 500;
+	margin-bottom: 3%;
+}
+.order h1 span{
+	float: right;
+	font-size: .14rem;
+	color:#f60;
+}
+.order li{
+	border-top: 1px solid #ccc;
+	width: 100%;
+	padding:3% 0;
+}
+.order li img{
+	width: 10%;
+	margin-top: -3px;
+}
+.order li img,.order li h2{
+	float: left;
+}
+.order li h2{
+	font-size: .16rem;
+	color:#555;
+	font-weight: 500;
+	width: 90%;
+	text-indent: 5%;
+}
+.order li h2 a{
+	float: right;
+	color:#888;
+	text-indent: 5%;
+	font-size: .14rem;
+}
+.order li h2 a i{
+	font-size: .24rem;
+	color:#999;
+	vertical-align: middle;
+	margin-top: -6px;
+}
+.botom{
+	margin-top: 5%;
+}
+.clear div{
+	padding-left: 15%;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.clear p{
+	display: inline-block;
+	color: #888;
+}
+.clear div p del{
+	font-size: .13rem;
+	color:#999;
+}
+.clear div p span{
+	color:#f60;
+	font-size: .13rem;
+}
+
+p.b_wrap{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+p.b_wrap span{
+	font-size: .14rem;
+	color:#999;
+	vertical-align: bottom;
+	margin-top: .16rem;
+}
+p.b_wrap span b{
+	font-weight: 300;
+	color: #f00;
+	font-size: .18rem;
+}
+p.b_wrap input{
+	padding:1% 0;
+	width: 24%;
+	background: #0F8BE4;
+	display: inline-block;
+	border-radius: .035rem;
+	color: #fff;
+	font-size: .14rem;
+	vertical-align: bottom;
+}
+p.b_wrap input#cancel,p.b_wrap input#view{
+	background: #fff;
+	border:1px solid #ccc;
+	color:#333;
+}
+
+/*底部按钮*/
+p.btn{
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	bottom:0;
+	padding:3% 5%;
+}
+p.btn a{
+	width: 100%;
+	padding:4% 0;
+	display: inline-block;
+	border-radius: .055rem;
+	background: #0F8BE4;
+	text-align: center;
+	font-size: .15rem;
+	color:#fff;
+}
+
+
+
+
+
+/*-------------activity_page.html-----------*/
+.bgImg{
+	width: 100%;
+	background: url(../img/bgImg.jpg) no-repeat;
+	background-size: cover;
+	padding:12% 0;
+}
+.bgImg h1{
+	color: #fff;
+	font-size: .16rem;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.con_wrap{
+	width: 80%;
+	position: relative;
+	margin:23% auto 0;
+	background: #f0f0f0;
+	padding:4% 6% 5% 6%;
+	border-radius: .055rem;
+}
+.con_wrap li{
+	margin:2% 0;
+}
+.con_wrap li h2{
+	font-size: .16rem;
+	color: #333;
+}
+.con_wrap li p{
+	font-size: .12rem;
+	color: #666;
+	padding:3% 0;
+}
+.con_wrap > img{
+	width: 30%;
+	position: absolute;
+	bottom:-10%;
+	right: -8%;
+	z-index: 99;
+}
+
+
+
+
+
+
+
+/*--------------quotes.html----------------*/
+.u_wrap{
+	width: 100%;
+	background: #fff;
+}
+.u_wrap li{
+	width: 90%;
+	margin:0 auto;
+	border-bottom:1px solid #ccc;
+	padding:2% 0;
+	display: flex;
+	justify-content: space-between;
+}
+.u_wrap div{
+	background: #f2f2f2;
+	padding:4% 5%;
+	font-size: .14rem;
+	color: #999;
+}
+.u_wrap li label,
+.u_wrap li span,
+.u_wrap li p input{
+	display: inline-block;
+}
+
+.u_wrap #slideUp{
+	/*display: none;*/
+}
+
+
+.u_wrap li label{
+	width: 34%;
+	color: #333;
+	font-size: .14rem;
+}
+.u_wrap li b{
+	width: 30%;
+	font-size: .12rem;
+	color: #999;
+	font-weight: 400;
+	text-indent: -13%;
+	margin-right:7%;
+	vertical-align: middle;
+	margin-top: 2px;
+}
+
+.u_wrap li span{
+	width: 38%;
+	color: #999;
+	font-size: .12rem;
+	text-align: center;
+	margin-top: 1px;
+	visibility: hidden;
+}
+.u_wrap li span i{
+	display: inline-block;
+	width: .14rem;
+	height: .14rem;
+	border-radius:5rem ;
+	background: #0F8BE4;
+	vertical-align: middle;
+	margin-right: 2%;
+	margin-top: -3px;
+}
+
+.u_wrap li p{
+	width: 26%;
+	display: flex;
+	justify-content: space-between;
+	/*justify-content: flex-end;*/
+}
+.u_wrap li p input{
+	width: 77%;
+	vertical-align: middle;
+	margin-top: -2px;
+	font-size: .11rem;
+}
+.u_wrap li p i{
+	color:#999;
+	font-size: .24rem;
+	vertical-align: middle;
+	margin-top: -2px;
+	width: 21%;
+}
+
+button.initial{
+	display: block;
+	width:40%;
+	padding:2% 0;
+	margin:8% auto;
+	background: #fff;
+	border-radius: .035rem;
+	font-size: .15rem;
+	color:#0F8BE4; 
+	box-shadow: -1px -2px 6px #ccc; 
+}
+
+
+/*提交按钮*/
+form#btn{
+	/*position: fixed;
+	bottom:0;*/
+	background: #fff;
+	width: 100%;
+	/*left:0;*/
+	padding:3% 5%;
+}
+form#btn input{
+	width: 100%;
+	margin:0 auto;
+	padding:4% 0;
+	background: #0F8BE4;
+	border-radius: .035rem;
+	font-size: .15rem;
+	color:#fff;
+}
+
+
+
+div.none{
+	display: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>保单列表</title>
+	<link rel="stylesheet" href="css/app_reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/land.css">
+</head>
+<body style="background: #F2F2F2;">
+	<header>
+    	<a href="car_insurance.html" class="fa fa-angle-left fa-2x" onClick="javascript :history.back(-1);"></a>
+    	<h1>保单列表</h1>
+    	<span></span>
+    </header>
+
+    <p class="tip">共有1张订单</p>
+
+    <div class="order">
+    	<h1>沪A123456</h1>
+    	<li class="clear">
+    		<img src="img/icon1.png" alt="">
+    		<h2>太平财险<a href="#">详情<i class="fa fa-angle-right"></i></a></h2>
+    		<div style="clear:both">
+	    		<p>太平财险</p>
+	    		<p><del>9898.00</del>&nbsp;&nbsp;6666.00&nbsp;&nbsp;<span>待付款</span></p>
+    		</div>
+    	</li>
+    	<li>
+    		<p class="b_wrap"> 
+    			<span>用户实付:&nbsp;<b>6666.00</b></span>
+				<input type="button" value="放弃订单" id="cancel">
+				<input type="button" value="付款">
+    		</p>
+    	</li>
+    </div>
+
+    <div class="order botom">
+    	<h1>沪A123456<span>交易成功</span></h1>
+    	<li class="clear">
+    		<img src="img/icon1.png" alt="">
+    		<h2>太平财险<a href="#">详情<i class="fa fa-angle-right"></i></a></h2>
+    		<div style="clear:both">
+	    		<p>太平财险</p>
+	    		<p><del>9898.00</del>&nbsp;&nbsp;6666.00&nbsp;&nbsp;<span>已付款</span></p>
+    		</div>
+    	</li>
+    	<li>
+    		<p class="b_wrap"> 
+    			<span>用户实付:&nbsp;<b>6666.00</b></span>
+				<input type="button" value="查看订单" id="view">
+    		</p>
+    	</li>
+    </div>
+
+	<p class="btn"><a href="#">返回车险首页</a></p>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/index.js"></script>
+</html>

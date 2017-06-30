@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>报价微调</title>
+	<link rel="stylesheet" href="css/app_reset.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/lCalendar.css"/>
+   	<link rel="stylesheet" href="css/land.css"/>
+    <link href="css/mobiscroll/mobiscroll.animation.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll/mobiscroll.frame.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll/mobiscroll.frame.ios.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll/mobiscroll.scroller.ios.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background:#f2f2f2;">
+	<header>
+    	<a href="car_insurance.html" class="fa fa-angle-left fa-2x" onClick="javascript :history.back(-1);"></a>
+    	<h1>报价微调</h1>
+    	<span></span>
+    </header>
+	
+    <ul class="u_wrap clear">
+    	<div>交强险调整</div>
+    	<li class="clear" id="slideUp">
+            <label>保险起期</label>
+            <span></span>
+            <p>
+                <input type="text" id="date1" readonly="" name="input_date" placeholder="请选择" data-lcalendar="2011-01-1,2019-12-31">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear" style="border:none;">
+            <label>交强险</label>
+            <b>不带缴车船税</b>
+            <p>
+                <input type="text" id="test1" placeholder="请选择">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<div>商业险调整</div>
+    	<li class="clear">
+            <label>保险起期</label>
+            <span></span>
+            <p>
+                <input type="text" id="date2" readonly="" name="input_date" placeholder="请选择" data-lcalendar="2011-01-1,2019-12-31">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>机动车损失险</label>
+            <span><i></i>不计免赔</span>
+            <p>
+                <input type="text" id="test2" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>第三责任险</label>
+            <span><i></i>不计免赔</span>
+            <p>
+                <input type="text" id="test3" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>司机责任险</label>
+            <span><i></i>不计免赔</span>
+            <p>
+                <input type="text" id="test4" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>乘客责任险</label>
+            <span><i></i>不计免赔</span>
+            <p>
+                <input type="text" id="test5" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>盗抢险</label>
+            <span><i></i>不计免赔</span>
+            <p>
+                <input type="text" id="test6" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>涉水险</label>
+            <span><i></i>不计免赔</span>
+            <p>
+                <input type="text" id="test7" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>玻璃险</label>
+            <span></span>
+            <p>
+                <input type="text" id="test8" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>划痕险</label>
+            <span><i></i>不计免赔</span>
+            <p>
+                <input type="text" id="test9" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear">
+            <label>自燃损失险</label>
+            <span><i></i>不计免赔</span>
+            <p>
+                <input type="text" id="test10" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    	<li class="clear" style="border:none;">
+            <label>指定专修厂险</label>
+            <span></span>
+            <p>
+                <input type="text" id="test11" placeholder="请选择" class="a_text">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </p>
+        </li>
+    </ul>
+
+    <button class="initial">恢复初始方案</button>
+
+    <form id="btn">
+    	<input type="button" value="提交" id="sub">
+    </form>
+
+    <!-- 默认选择项（隐藏） -->
+    <div class="none">
+        <select name="theme" id="theme" class="settings">
+            <option value="ios" selected>iOS</option>
+        </select>
+    </div>
+    <div class="none">
+        <select name="display" id="display" class="settings">
+            <option value="bottom" selected>Bottom</option>
+        </select>
+    </div>
+    <div class="none">
+        <select name="language" id="language" class="settings">
+            <option value="zh" selected>Chinese</option>
+        </select>
+    </div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/mobiscroll/mobiscroll.dom.js"></script>
+<script src="js/mobiscroll/mobiscroll.core.js"></script>
+<script src="js/mobiscroll/mobiscroll.scrollview.js"></script>
+<script src="js/mobiscroll/mobiscroll.frame.js"></script>
+<script src="js/mobiscroll/mobiscroll.frame.ios.js"></script>
+<script src="js/mobiscroll/mobiscroll.scroller.js"></script>
+<script src="js/mobiscroll/mobiscroll.i18n.zh.js"></script>
+<script src="js/index.js"></script>
+<script src="js/lCalendar.js"></script>
+<script src="js/customize/Cross_strong.js"></script>
+<script type="text/javascript">
+    // 日历滑动
+    var calendar = new lCalendar();
+    var calendara = new lCalendar();
+    calendar.init({
+        'trigger': '#date1',
+        'type': 'date'
+    });
+    calendara.init({
+        'trigger': '#date2',
+        'type': 'date'
+    });
+</script>
+<script>
+    $('#sub').click(function(){
+        // var a = $('.a_text').val(); 
+        if($('.a_text').val() == ""){
+            self.location='quote_details.html';
+        }
+        else{
+            alert("未有任何修改");
+        }
+    })
+</script>
+</html>

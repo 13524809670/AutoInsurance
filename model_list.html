@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>车型列表</title>
+	<link rel="stylesheet" href="css/app_reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/model_list.css">
+</head>
+<body style="background: #F2F2F2;">
+	<header>
+    	<a href="car_insurance.html" class="fa fa-angle-left fa-2x" onClick="javascript :history.back(-1);"></a>
+    	<h1>车型列表</h1>
+    	<span></span>
+    </header>
+	
+	<ul class="item">
+		<li>
+			<input type="checkbox" id="box" checked><label for="box"></label>
+			<p>马自达6红旗CA7222AT轿车手自一体2017款超豪华型5座
+			</p><br>
+			<span>新车参考价: 202382元</span>
+		</li>
+	</ul>
+	<a href="modify_info.html" id="black">不是以上车型</a>
+	<p class="btom">
+		<a href="View_quotes.html" id="submit">提交</a>
+	</p>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(window).resize(function(){
+		$('html').css({'font-size':$(window).width()/3.2 + "px"});
+	})
+
+	$(function(){
+		$('html').css({'font-size':$(window).width()/3.2 + "px"});
+	})
+</script>
+</html>

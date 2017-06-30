@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>报价详情</title>
+	<link rel="stylesheet" href="css/app_reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/model_list.css">
+</head>
+<body style="background: #F2F2F2;">
+	<header>
+    	<a href="car_insurance.html" class="fa fa-angle-left fa-2x" onClick="javascript :history.back(-1);"></a>
+    	<h1>报价详情</h1>
+    	<span></span>
+    </header>
+
+    <div class="a_wrap clear">
+    	<img src="img/icon1.png" alt="">
+    	<p>太平洋财险<span>￥2266</span></p>
+    </div>
+
+	<ul class="pub list">
+		<li><h1>保障详情</h1><a href="quotes.html">修改</a></li>
+		<li><p>投保地区</p><span>上海市黄浦区</span></li>
+		<li><p>商业险</p><span>2266</span></li>
+		<li><p>第三者责任险(100万)<b>不计免赔</b></p><span>2266</span></li>
+		<li><p>司机责任险(1万)<b>不计免赔</b></p><span>2266</span></li>
+		<li><p>乘客责任险(1万)<b>不计免赔</b></p><span>2266</span></li>
+		<li>专享优惠</li>
+		<li><p>起保时间: <b>2017-4-20&nbsp;12时</b></p><span>请务必核实启保期</span></li>
+		<li><p>服务和礼包</p><a href="activity_page.html">查看详情</a></li>
+	</ul>
+    
+	<ul class="pub last" style="background: #fff;">
+		<li><h1>车辆信息</h1><a href="add_info.html">修改</a></li>
+		<li><p>车牌号码</p><span>沪AC12345</span></li>
+		<li><p>品牌型号</p><span>宝马X6</span></li>
+		<li><p>车辆识别码</p><span>LFE*******380</span></li>
+		<li><p>发动机号码</p><span>K*****123</span></li>
+		<li><p>注册日期</p><span>****年**月**日</span></li>
+		<li>实际投保车辆信息以保险公司确认为准</li>
+	</ul>
+
+	<div class="q_footer">
+		<p><input type="checkbox" id="btn"><label for="btn"></label>我已阅读并同意<a href="protocol.html">《保险条款》</a></p>
+		<input type="button" value="提交" id="btna">
+	</div>
+
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+
+	if($('#btn').is(':checked')){
+		$('#btna').css('background','#0F8BE4');
+		$('#btna').click(function(){
+			self.location='confirm_order.html'; //确认订单页
+		});
+	}
+	else{
+		$('#btna').css('background','#999');
+	}
+
+</script>
+</html>

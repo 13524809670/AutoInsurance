@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>收件地址</title>
+	<link rel="stylesheet" href="css/app_reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/model_list.css">
+</head>
+<body style="background: #F2F2F2;">
+	<header>
+    	<a href="car_insurance.html" class="fa fa-angle-left fa-2x" onClick="javascript :history.back(-1);"></a>
+    	<h1>收件地址</h1>
+    	<span></span>
+    </header>
+
+    <form id="txt">
+    	<li>收件人<input type="text" placeholder="请输入收件人姓名" id="name"></li>
+    	<li>联系电话<input type="text" placeholder="请输入联系电话" id="phone"></li>
+    	<li>所在地区<input type="text" placeholder="请输入所在地区" id="area"></li>
+    	<li style="border:none;"><textarea placeholder="详细地址"></textarea></li>
+    </form>
+    <p class="center">请保证收货地址以及信息准确</p>
+
+    <form id="btn">
+    	<input type="button" value="提交" id="back">
+    </form>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

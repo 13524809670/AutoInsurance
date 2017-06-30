@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>确认订单</title>
+	<link rel="stylesheet" href="css/app_reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/model_list.css">
+</head>
+<body style="background: #F2F2F2;">
+	<header>
+    	<a href="car_insurance.html" class="fa fa-angle-left fa-2x" onClick="javascript :history.back(-1);"></a>
+    	<h1>确认订单</h1>
+    	<span></span>
+    </header>
+
+    <form id="address" class="clear">
+    	<input type="text" value="请输入地址信息" id="add">
+    	<i class="fa fa-angle-right fa-2x clear"></i>
+    	<span>请保证邮寄地点可以安全收取邮件</span>
+    </form>
+    <img src="img/border_02.png" alt="">
+
+    <div class="piece">投保人信息 <p><input type="text" value="*某某"><i class="fa fa-angle-right fa-2x"></i></p></div>
+
+    <div class="m_wrap clear">
+    	<p>付款方式</p>
+    	<li class="right">不分期<br>全额付款</li>
+    	<li>分期3期(0手续费)<br>￥999.00/期</li>
+    	<li class="right">分期6期(含手续费)<br>￥999.00/期</li>
+    	<li>分期12期(含手续费)<br>￥999.00/期</li>
+    </div>
+
+    <p class="fixed"><span>￥9876.00<b>元</b></span><input type="button" value="付款"></p>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

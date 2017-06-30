@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>买车险</title>
+    <link rel="stylesheet" href="css/app_reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/LArea.css">
+    <link rel="stylesheet" href="css/lCalendar.css">
+    <link rel="stylesheet" type="text/css" href="css/honeySwitch.css">
+</head>
+<body style="background: #F2F2F2;">
+    <header>
+    	<a href="car_insurance.html" class="fa fa-angle-left fa-2x" onClick="javascript :history.back(-1);"></a>
+    	<h1>买车险</h1>
+    	<span></span>
+    </header>
+
+    <img src="img/banner1.png" alt="" class="banner">
+
+	<form id="content">
+		<li class="style clear">
+			<div>
+		        <div class="content-block clear">
+		        	<label>投保地区</label>
+		            <input id="city" type="text" readonly="" placeholder="请选择"/>
+		            <input id="value1" type="hidden"/>
+		            <i class="fa fa-angle-right fa-2x" id="midden"></i>
+		        </div>
+	        </div>
+	        <p>投保地区可能会影响保单配送地址范围</p>
+	    </li>
+		<li class="style clear">
+			<label>车牌号码</label>
+			<input type="text" placeholder="请输入" id="number">
+		</li>
+		<li class="style clear">
+			<input type="text" placeholder="请核对车主车辆信息(只支持私家车)" id="text">
+		</li>
+		<li class="style clear">
+			<label>车主姓名</label>
+			<input type="text" placeholder="请输入用户名" id="name"> 
+			<span id="link">修改</span>
+		</li>
+		<li class="mask clear">
+			<label>身份证号码</label>
+			<input type="text" placeholder="请输入证件号码" id="license">
+		</li>
+		<li class="clear">
+			<div class="common-row">
+				<label class="cell-left">一年内购置二手车</label>
+				<div class="cell-right"><span class="switch-on" themeColor="#0F8BE4" id="directory"></span></div>
+			</div>
+		</li>
+		<li class="style clear none">
+			<label>过户日期</label>
+			<div>
+				<input id="date" type="text" readonly="" name="input_date" placeholder="请选择" data-lcalendar="2011-01-1,2019-12-31"/>
+				<i class="fa fa-angle-right fa-2x" id="midden"></i>
+			</div>
+		</li>
+		<li class="style clear" style="border:none;background: #F2F2F2;">
+			<input type="checkbox" name="a" style="margin-top:4px">
+			<span>我接受<a href="protocol.html">《鸿运保车险平台服务协议》</a>并确保已取得车主本人授权进行投保相关信息查询</span>
+		</li>
+		<li style="background: #F2F2F2;border:none;" class="clear" ><input type="button" value="为爱车投保" id="submit" ></li>
+	</form>
+
+	<a href="" class="d_dan">我的订单<i class="fa fa-angle-right fa-2x" id="midden"></i></a>
+	<a href="" style="text-align: center;padding:3% 0;" class="for">使用帮助</a>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/LAreaData1.js"></script>
+<script src="js/LAreaData2.js"></script>
+<script src="js/LArea.js"></script>
+<script src="js/lCalendar.js"></script>
+<script src="js/honeySwitch.js"></script>
+<script type="text/javascript" src="js/date-city.js"></script>
+<script>
+	// 按钮开关
+	$(function(){
+		switchEvent("#fly",function(){
+			$("#network").slideUp();
+		},function(){
+			$("#network").slideDown();
+		});
+		switchEvent("#directory",function(){
+			$("#directory_content").fadeIn();
+		},function(){
+			$("#directory_content").fadeOut();
+		});
+	});
+</script>
+</html>
