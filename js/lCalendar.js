@@ -16,7 +16,7 @@ window.lCalendar = (function() {
 		this.minY = 1900;
 		this.minM = 1,
 			this.minD = 1,
-			this.maxY = 2099,
+			this.maxY = 2999,
 			this.maxM = 12,
 			this.maxD = 31
 	}
@@ -286,16 +286,6 @@ window.lCalendar = (function() {
 				_self.gearDate.querySelector(".time_ss").setAttribute("val", e.ss);
 				setTimeGearTooth();
 			}
-			
-			
-			
-	
-			
-			
-			
-			
-			
-			
 			
 			
 			//重置日期节点个数

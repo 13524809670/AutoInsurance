@@ -1,9 +1,10 @@
+
+/*年月日滑轮联动*/
 .gearDate,
 .gearDatetime,
 .gearTime {
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: 9px;
-	/*font-size: 0.8rem;*/
+	font-size: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
 	display: block;
 	position: fixed;
@@ -55,7 +56,6 @@
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	font-weight: bold;
 	background-color: transparent;
 	-webkit-mask: -webkit-gradient(linear, 0% 50%, 0% 100%, from(#debb47), to(rgba(36, 142, 36, 0)));
 	-webkit-mask: -webkit-linear-gradient(top, #debb47 50%, rgba(36, 142, 36, 0))
@@ -63,7 +63,7 @@
 .date_roll>div,
 .datetime_roll>div,
 .time_roll>div {
-	font-size: 2.3em;
+	font-size: .16rem;
 	height: 6em;
 	float: left;
 	background-color: transparent;
@@ -75,7 +75,7 @@
 .date_roll_mask {
 	-webkit-mask: -webkit-gradient(linear, 0% 40%, 0% 0%, from(#debb47), to(rgba(36, 142, 36, 0)));
 	-webkit-mask: -webkit-linear-gradient(bottom, #debb47 50%, rgba(36, 142, 36, 0));
-	padding: 0 0 3em 0
+	padding: 1em 0 4em 0;
 }
 
 .date_roll>div:nth-child(2) {
@@ -147,10 +147,10 @@
 
 .date_btn {
 	color: #0F8BE4;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	line-height: 1em;
 	text-align: center;
-	padding: 0.8em 1em 3.5em;
+	padding: 0.8em 1em 3em;
 	cursor: pointer
 }
 

@@ -3,44 +3,51 @@
 .item{
 	width: 100%;
 	display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
 	justify-content: space-around;
 	background: #fff;
 	border-top:1px solid #ccc;
 	padding:2% 0;
 }
+/*单选*/
 .item li{
 	position: relative;
-}
-.item li p{
-	display: inline-block;
 }
 .item li input[type=checkbox],
 .item li label{
 	position: absolute;
-	top:10%;
-	left:4%;
-	width: .12rem;
-	height: .12rem;
-	border-radius: .025rem;
+	display: inline-block;
+	top:9%;
+	left:5%;
+	width: .15rem;
+	height: .15rem;
 }
 .item li input[type=checkbox]{
 	opacity: 0;
 }
 .item li label{
-	background: #ccc;
+	background: url(../img/btn.png) no-repeat;
+	background-size: cover;
+	background-position:0 0;
+	vertical-align: middle;
 }
 .item li input[type=checkbox]:checked+label{
-	background: #0F8BE4;
+	background: url(../img/btn.png) no-repeat;
+	background-size: cover;
+	background-position:0 -0.184rem;
 }
 .item li p{
-	margin-left: 10%;
-	margin-top: 1%;
+	margin: 1% 0 1% 12%;
+	line-height: 25px;
+	display: inline-block;
+	font-size: .14rem;
 }
 .item li span{
-	margin-left: 10%;
+	margin-left: 12%;
 	color: #0F8BE4;
+	font-size: .12rem;
 }
-
 a#black{
 	display:block;
 	padding:2% 0;
@@ -59,13 +66,13 @@ p.btom{
 	bottom:0;
 	background: #fff;
 }
-a#submit{
+input#submit{
 	display: block;
 	width: 90%;
 	text-align: center;
 	margin:0 auto;
 	padding:3% 0;
-	background: #0F8BE4;
+	background: #999;
 	color: #fff;
 	font-size: .14rem;
 	border-radius: .05rem;
@@ -81,6 +88,7 @@ a#submit{
 	padding:3% 0;
 	display: flex;
 	display: -webkit-flex;
+	-webit-justify-content: space-around;
 	justify-content: space-around;
 }
 .nav_wrap a{
@@ -89,9 +97,6 @@ a#submit{
 .nav_wrap a.active{
 	color:#0F8BE4;
 }
-
-
-
 .hide{
 	display: none;
 }
@@ -103,7 +108,7 @@ a#submit{
 }
 .hide li > img,
 #view li > img{
-	width: 18%;
+	width: 14%;
 }
 .hide li .p_one,
 #view li .p_one{
@@ -151,9 +156,9 @@ a#submit{
 } 
 .hide li .p_two b,
 #view li .p_two b{
-	font-size: 0.1rem;
+	font-size: .11rem;
 	color:#f50;
-	font-weight: 200;
+	font-weight: 300;
 	margin-left: 2px;
 	width: 93%;
 	display: inline-block;
@@ -161,8 +166,7 @@ a#submit{
 .hide li .p_two > img,
 #view li .p_two > img{
 	width: 6%;
-	vertical-align: top;
-	margin-top: 2px;
+	vertical-align: middle;
 	display:inline-block;
 }
 
@@ -195,7 +199,6 @@ a#submit{
 	float: right;
 	color:#f00;
 }
-
 ul.pub{
 	border-top:1px solid #0F8BE4;
 	margin-top:5%;
@@ -205,6 +208,7 @@ ul.pub li{
 	width: 100%;
 	display: flex;
 	display: -webkit-flex;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	padding:3% 5%;
 	font-size: .14rem;
@@ -239,22 +243,22 @@ ul.list li:nth-child(2){
 	font-size: .14rem;
 }
 ul.list li:nth-child(8){
-	font-size: .1rem;
+	font-size: .12rem;
 	color:#f00;
 	width: 100%;
 }
 ul.list li:nth-child(8) p{
 	color:#333;
-	width: 60%;
+	width: 66%;
 }
 ul.list li:nth-child(8) p b{
 	color:#f00;
 	font-weight: 400;
-	font-size: .1rem;
+	font-size: .12rem;
 }
 ul.list li:nth-child(8) span{
 	display: inline-block;
-	width: 40%;
+	/*width: 34%;*/
 	float: right;
 }
 ul.list li:nth-child(9){
@@ -267,7 +271,7 @@ ul.list li:nth-child(6) b{
 	border:1px solid #0F8BE4;
 	padding:1px 2px;
 	color:#0F8BE4;
-	font-size: .1rem;
+	font-size: .12rem;
 	border-radius: 0.025rem;
 	font-weight: 400;
 	margin-left: 3px;
@@ -282,7 +286,6 @@ ul.last li p,ul.last li span{
 ul.last li:nth-child(7){
 	color: #ccc;
 }
-
 .q_footer{
 	width: 100%;
 	margin-top: 5%;
@@ -305,8 +308,8 @@ ul.last li:nth-child(7){
 	display: inline-block;
 	top:0;
 	left:0;
-	width: .16rem;
-	height: .16rem;
+	width: .15rem;
+	height: .15rem;
 }
 .q_footer p input[type=checkbox]{
 	opacity: 0;
@@ -321,7 +324,7 @@ ul.last li:nth-child(7){
 .q_footer p input[type=checkbox]:checked+label{
 	background: url(../img/btn.png) no-repeat;
 	background-size: cover;
-	background-position:0 -0.21rem;
+	background-position:0 -0.184rem;
 }
 .q_footer input[type=button]{
 	width: 100%;
@@ -370,7 +373,6 @@ p.center{
 	font-size: .13rem;
 	color:#999;
 }
-
 form#btn{
 	position: fixed;
 	bottom:0;
@@ -405,8 +407,10 @@ form#btn input{
 }
 #address #add{
 	float: left;
+	width: 95%;
+	padding:1% 0;
 	color:#333;
-	font-size: .16rem;
+	font-size: .15rem;
 }
 #address i{
 	display: block;
@@ -420,30 +424,6 @@ form#btn input{
 	color:#999;
 	margin-top: 2%;
 }
-
-
-div.piece{
-	width: 100%;
-	background: #fff;
-	margin-top: 5%;
-	font-size: .14rem;
-	font-weight: 600;
-	color: #333;
-	padding:3% 5%;
-	display: flex;
-	display: -webkit-flex;
-	justify-content: space-between;
-}
-.piece input{
-	width: .5rem;
-}
-.piece i{
-	vertical-align: middle;
-	margin-top:-.025rem;
-	color:#999;
-}
-
-
 .m_wrap{
 	width: 100%;
 	margin-top: 5%;
@@ -458,7 +438,7 @@ div.piece{
 }
 .m_wrap li{
 	width: 47.5%;
-	padding:5% 0;
+	padding:3% 0;
 	float: left;
 	border-radius: .08rem;
 	box-shadow: 0 3px 6px #f5f5f5;
@@ -471,9 +451,9 @@ div.piece{
 .m_wrap li.right{
 	margin-right: 5%;
 }
-
-
-
+.m_wrap li.on{
+	background: #D8EFFF;
+}
 p.fixed{
 	width: 100%;
 	position: fixed;

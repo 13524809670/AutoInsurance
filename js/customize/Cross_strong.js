@@ -138,13 +138,20 @@
     var theme, display, lang;
 
     $('.settings').on('change', function () {
+
         theme = $('#theme').val() || mobiscroll.settings.theme;
+
         display = $('#display').val();
+
         lang = $('#language').val();
 
         init();
-    });
 
+    });
     $('#theme').trigger('change');
+
+    // $('.mbsc-fr-btn').on('select',function(valueText, inst){
+    //     $('#show').css('visibility','visible');
+    // })
    
 })(mobiscroll.$);

@@ -50,7 +50,7 @@
         </li>
     	<li class="clear">
             <label>机动车损失险</label>
-            <span><i></i>不计免赔</span>
+            <span id="show"><i></i>不计免赔</span>
             <p>
                 <input type="text" id="test2" placeholder="请选择" class="a_text">
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -136,7 +136,9 @@
     	<input type="button" value="提交" id="sub">
     </form>
 
-    <!-- 默认选择项（隐藏） -->
+
+
+    <!-- 默认选项（隐藏） -->
     <div class="none">
         <select name="theme" id="theme" class="settings">
             <option value="ios" selected>iOS</option>
@@ -153,17 +155,17 @@
         </select>
     </div>
 </body>
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/mobiscroll/mobiscroll.dom.js"></script>
-<script src="js/mobiscroll/mobiscroll.core.js"></script>
-<script src="js/mobiscroll/mobiscroll.scrollview.js"></script>
-<script src="js/mobiscroll/mobiscroll.frame.js"></script>
-<script src="js/mobiscroll/mobiscroll.frame.ios.js"></script>
-<script src="js/mobiscroll/mobiscroll.scroller.js"></script>
-<script src="js/mobiscroll/mobiscroll.i18n.zh.js"></script>
-<script src="js/index.js"></script>
-<script src="js/lCalendar.js"></script>
-<script src="js/customize/Cross_strong.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/mobiscroll/mobiscroll.dom.js"></script>
+<script type="text/javascript" src="js/mobiscroll/mobiscroll.core.js"></script>
+<script type="text/javascript" src="js/mobiscroll/mobiscroll.scrollview.js"></script>
+<script type="text/javascript" src="js/mobiscroll/mobiscroll.frame.js"></script>
+<script type="text/javascript" src="js/mobiscroll/mobiscroll.frame.ios.js"></script>
+<script type="text/javascript" src="js/mobiscroll/mobiscroll.scroller.js"></script>
+<script type="text/javascript" src="js/mobiscroll/mobiscroll.i18n.zh.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/lCalendar.js"></script>
+<script type="text/javascript" src="js/customize/Cross_strong.js"></script>
 <script type="text/javascript">
     // 日历滑动
     var calendar = new lCalendar();
@@ -176,16 +178,5 @@
         'trigger': '#date2',
         'type': 'date'
     });
-</script>
-<script>
-    $('#sub').click(function(){
-        // var a = $('.a_text').val(); 
-        if($('.a_text').val() == ""){
-            self.location='quote_details.html';
-        }
-        else{
-            alert("未有任何修改");
-        }
-    })
 </script>
 </html>

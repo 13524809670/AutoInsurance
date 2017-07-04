@@ -64,11 +64,10 @@ a{
 
 
 
-
+/*头部*/
 header{
-    padding:3% 0;
+    padding:4% 0;
     width: 100%;
-    background: #fff;
     display: -webkit-flex;
     display: flex;
     justify-content:space-between;

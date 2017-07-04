@@ -1,4 +1,14 @@
 window.onload=function(){
+
+	// 日历滑动
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#date',
+		'type': 'date'
+	});
+
+
+
 	// 城市滑动
     var area1 = new LArea();
     area1.init({
@@ -14,12 +24,7 @@ window.onload=function(){
     area1.value=[1,15,3];//控制初始位置，注意：该方法并不会影响到input的value
 
 
-    // 日历滑动
-	var calendar = new lCalendar();
-	calendar.init({
-		'trigger': '#date',
-		'type': 'date'
-	});
+    
 
 
 	//修改取消切换

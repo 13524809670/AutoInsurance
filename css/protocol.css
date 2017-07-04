@@ -1,28 +1,27 @@
-body{
-	padding:8% 5%;
-}
-h1{
-	font-size: .18rem;
-	color: #333;
-	text-align: center;
-}
 h2{
-	font-size: .17rem;
+	font-size: .16rem;
 	color:#555;
 	margin-top: 3%;
+	padding:0 5%;
+	font-weight: 500;
 }
 h3{
-	font-size: .16rem;
+	font-size: .15rem;
 	color:#777;
 	margin-top: 3%;
+	padding:0 5%;
+	font-weight: 500;
 }
 h4{
-	font-size: .15rem;
+	font-size: .14rem;
 	color:#888;
 	margin-top: 3%;
+	padding:0 5%;
+	font-weight: 500;
 }
 p{
-	font-size: .14rem;
+	font-size: .13rem;
 	color: #999;
 	line-height: 26px;
+	padding:0 5%;
 }

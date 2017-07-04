@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>买车险</title>
-    <link rel="stylesheet" href="css/app_reset.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>车险超市</title>
+    <link rel="stylesheet" href="css/app_reset.css"><!--移动端重置样式-->
+    <link rel="stylesheet" href="css/font-awesome.min.css"><!--字体图标-->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/LArea.css">
-    <link rel="stylesheet" href="css/lCalendar.css">
-    <link rel="stylesheet" type="text/css" href="css/honeySwitch.css">
+    <link rel="stylesheet" href="css/LArea.css"><!--选择地区样式-->
+    <link rel="stylesheet" href="css/lCalendar.css"><!--日历样式-->
+    <link rel="stylesheet" type="text/css" href="css/honeySwitch.css"><!--滑动按钮-->
 </head>
 <body style="background: #F2F2F2;">
     <header>
     	<a href="car_insurance.html" class="fa fa-angle-left fa-2x" onClick="javascript :history.back(-1);"></a>
-    	<h1>买车险</h1>
+    	<h1>车险超市</h1>
     	<span></span>
     </header>
 
@@ -36,9 +36,7 @@
 			<label>车牌号码</label>
 			<input type="text" placeholder="请输入" id="number">
 		</li>
-		<li class="style clear">
-			<input type="text" placeholder="请核对车主车辆信息(只支持私家车)" id="text">
-		</li>
+		<li class="style clear">请核对车主车辆信息(只支持私家车)</li>
 		<li class="style clear">
 			<label>车主姓名</label>
 			<input type="text" placeholder="请输入用户名" id="name"> 
@@ -51,7 +49,7 @@
 		<li class="clear">
 			<div class="common-row">
 				<label class="cell-left">一年内购置二手车</label>
-				<div class="cell-right"><span class="switch-on" themeColor="#0F8BE4" id="directory"></span></div>
+				<div class="cell-right"><span class="switch-off" themeColor="#0F8BE4" id="directory"></span></div>
 			</div>
 		</li>
 		<li class="style clear none">
@@ -62,13 +60,16 @@
 			</div>
 		</li>
 		<li class="style clear" style="border:none;background: #F2F2F2;">
-			<input type="checkbox" name="a" style="margin-top:4px">
-			<span>我接受<a href="protocol.html">《鸿运保车险平台服务协议》</a>并确保已取得车主本人授权进行投保相关信息查询</span>
+			<p>
+				<input type="checkbox" id="btn"><label for="btn"></label>
+				<span>我接受<a href="protocol.html">《鸿运保车险平台服务协议》</a>并确保已取得车主本人授权进行投保相关信息查询</span>
+			</p>
 		</li>
 		<li style="background: #F2F2F2;border:none;" class="clear" ><input type="button" value="为爱车投保" id="submit" ></li>
 	</form>
 
-	<a href="" class="d_dan">我的订单<i class="fa fa-angle-right fa-2x" id="midden"></i></a>
+	<a href="list_policies.html" class="d_dan">我的订单<i class="fa fa-angle-right fa-2x"></i></a>
+	<a href="partner_company.html" class="d_dan">合作公司<i class="fa fa-angle-right fa-2x"></i></a>
 	<a href="" style="text-align: center;padding:3% 0;" class="for">使用帮助</a>
 </body>
 <script src="js/jquery-3.1.1.min.js"></script>

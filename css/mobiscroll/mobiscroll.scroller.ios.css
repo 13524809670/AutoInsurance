@@ -105,9 +105,9 @@
 }
 
 .mbsc-ios .mbsc-sc-itm {
-    padding: 0 .5em;
+    /*padding: 0 .5em;*/
     color: #9d9d9d;
-    font-size: 1.433333em;
+    font-size: 1.333333em;
 }
 
 .mbsc-ios .mbsc-sc-itm.mbsc-btn-a {
@@ -189,7 +189,7 @@
 }
 
 .mbsc-ios .mbsc-sc-whl-multi .mbsc-sc-itm-sel:before {
-    font-size: 1.818181em;
+    font-size: 1.618181em;
 }
 
 .mbsc-ios .mbsc-sc-whl-gr-3d .mbsc-sc-whl-multi .mbsc-sc-whl-o {
