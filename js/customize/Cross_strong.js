@@ -10,7 +10,11 @@
                 [{
                     data: ['投保', '不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#slideUp').slideDown();
+                // console.log(ev.valueText);
+            }
         });
 
 
@@ -22,7 +26,12 @@
                 [{
                     data: ['投保', '不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#test2').parents('li').find('span').css('visibility','visible');
+                // console.log(ev.valueText);
+            }
+
         });
 
 
@@ -34,7 +43,11 @@
                 [{
                     data: ['10万', '30万','50万','70万','100万','200万','不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#test3').parents('li').find('span').css('visibility','visible');
+                // console.log(ev.valueText);
+            }
         });
 
 
@@ -46,7 +59,11 @@
                 [{
                     data: ['1万', '5万','10万','20万','不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#test4').parents('li').find('span').css('visibility','visible');
+                // console.log(ev.valueText);
+            }
         });
 
 
@@ -58,7 +75,11 @@
                 [{
                     data: ['1万', '5万','10万','20万','不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#test5').parents('li').find('span').css('visibility','visible');
+                // console.log(ev.valueText);
+            }
         });
 
 
@@ -70,7 +91,11 @@
                 [{
                     data: ['投保', '不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#test6').parents('li').find('span').css('visibility','visible');
+                // console.log(ev.valueText);
+            }
         });
 
 
@@ -82,7 +107,11 @@
                 [{
                     data: ['投保', '不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#test7').parents('li').find('span').css('visibility','visible');
+                // console.log(ev.valueText);
+            }
         });
 
 
@@ -106,7 +135,11 @@
                 [{
                     data: ['5万','1万','2万', '不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#test9').parents('li').find('span').css('visibility','visible');
+                // console.log(ev.valueText);
+            }
         });
 
 
@@ -114,11 +147,16 @@
             theme: theme,
             display: display,
             lang: lang,
+            
             wheels: [
                 [{
                     data: ['投保', '不投保',]
                 }]
-            ]
+            ],
+            onSet:function(ev){
+                $('#test10').parents('li').find('span').css('visibility','visible');
+                // console.log(ev.valueText);
+            }
         });
 
 
@@ -146,12 +184,8 @@
         lang = $('#language').val();
 
         init();
-
+        
     });
     $('#theme').trigger('change');
 
-    // $('.mbsc-fr-btn').on('select',function(valueText, inst){
-    //     $('#show').css('visibility','visible');
-    // })
-   
 })(mobiscroll.$);

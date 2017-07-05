@@ -34,6 +34,15 @@ $(function(){
 	// quotes.html
 	$(".initial").click(function(){
 		$("input[type=text]").val('');
+        $('#test2').parents('li').find('span').css('visibility','hidden');
+        $('#test3').parents('li').find('span').css('visibility','hidden');
+        $('#test4').parents('li').find('span').css('visibility','hidden');
+        $('#test5').parents('li').find('span').css('visibility','hidden');
+        $('#test6').parents('li').find('span').css('visibility','hidden');
+        $('#test7').parents('li').find('span').css('visibility','hidden');
+        $('#test9').parents('li').find('span').css('visibility','hidden');
+        $('#test10').parents('li').find('span').css('visibility','hidden');
+        $('#slideUp').slideUp();
 	})
 	$('#sub').click(function(){
         var date1 = $('#date1').val();
@@ -205,6 +214,14 @@ $(function(){
     		$('#submit').attr('disabled',true);
     		$('#submit').css('background','#999');
     	}
+    })
+
+
+
+
+    // land.html
+    $('.btn_wrap #btn_a').click(function(){
+        self.location='car_insurance.html';
     })
 })
 

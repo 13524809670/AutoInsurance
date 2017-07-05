@@ -12,12 +12,21 @@ form#content li{
 	margin-bottom: 1px;
 	background: #fff;
 }
+form#content li input::-webkit-input-placeholder{
+	color:#999;
+    text-transform:uppercase;
+    vertical-align:middle; 
+}
 form#content li input[type=text]{
-	padding:1% 0;
 	width: 66%;
+	height:.16rem;
+	line-height:.16rem;
 	color:#666;
 	text-indent: 5%;
-	vertical-align: middle;
+	font-size: .12rem;
+	vertical-align:middle; 
+	margin-top:1px;
+	margin-bottom: 2px;
 }
 form#content li input#text{
 	width:100%;
@@ -29,6 +38,7 @@ form#content li label{
 form#content li label,
 form#content li input{
 	float: left;
+	vertical-align: middle;
 }
 form#content li i,
 form#content li > #link,
@@ -36,10 +46,11 @@ form#content li > #link,
 	float: right;
 }
 form#content li > #link{
-	width: 9%;
+	width: 8.5%;
 	color:#0F8BE4;
+	font-size: .12rem;
 	vertical-align: middle;
-	margin-top: .03rem;
+	/*margin-top: .03rem;*/
 }
 form#content li i,p.d_dan i{
 	color: #666;
@@ -180,7 +191,6 @@ p.info a{
 	color:#f00;
 	font-size: 0.12rem;
 }
-
 form.pub li{
 	padding:3% 5%;
 	width: 100%;
@@ -188,7 +198,7 @@ form.pub li{
 	margin-bottom: 1px;
 }
 form.pub li.tip{
-	font-size: .1rem;
+	font-size: .12rem;
 	color: #666;
 	background: #F2F2F2;
 }
@@ -203,8 +213,19 @@ form.pub li #sub{
 	border-radius: .035rem;
 	display: block;
 	margin:3% auto 0;
+	font-size: .14rem;
 	background: #0F8BE4;
 	color:#fff;
+}
+.last{
+	text-align: center;
+}
+.last a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color:#0F8BE4;
+	font-size: .14rem;
 }
 
 
@@ -219,7 +240,7 @@ form.pub li.left_d div{
 	justify-content: space-between;
 }
 form.pub li.left_d input{
-	width: 90%;
+	width: 70%;
 }
 form.pub li.left_d i{
 	margin-top: -3px;
@@ -227,6 +248,9 @@ form.pub li.left_d i{
 	font-size: .24rem;
 	width: 7%;
 	color: #999;
+}
+form.pub li label{
+	font-size: .14rem;
 }
 form.pub li.left_a label,
 form.pub li.left_b label,
@@ -254,16 +278,6 @@ form.pub li input#subtn{
 	background: #0F8BE4;
 	color:#fff;
 	font-size: .14rem;
-}
-.last{
-	text-align: center;
-}
-.last a{
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	color:#0F8BE4;
-	font-size: .13rem;
 }
 
 

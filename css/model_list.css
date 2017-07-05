@@ -18,7 +18,7 @@
 .item li label{
 	position: absolute;
 	display: inline-block;
-	top:9%;
+	top:9.3%;
 	left:5%;
 	width: .15rem;
 	height: .15rem;
@@ -355,6 +355,10 @@ form#txt{
 	border-bottom:1px solid #ccc;
 	font-size: .14rem;
 }
+#txt li input{
+	font-size: .12rem;
+	color:#555;
+}
 #txt li:nth-child(1) input{
 	margin-left: 15%;
 }
@@ -370,7 +374,7 @@ form#txt{
 p.center{
 	text-align: center;
 	margin-top:5%;
-	font-size: .13rem;
+	font-size: .12rem;
 	color:#999;
 }
 form#btn{

@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>报价微调</title>
 	<link rel="stylesheet" href="css/app_reset.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
@@ -25,7 +27,6 @@
     	<div>交强险调整</div>
     	<li class="clear" id="slideUp">
             <label>保险起期</label>
-            <span></span>
             <p>
                 <input type="text" id="date1" readonly="" name="input_date" placeholder="请选择" data-lcalendar="2011-01-1,2019-12-31">
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -58,7 +59,7 @@
         </li>
     	<li class="clear">
             <label>第三责任险</label>
-            <span><i></i>不计免赔</span>
+            <span id="show"><i></i>不计免赔</span>
             <p>
                 <input type="text" id="test3" placeholder="请选择" class="a_text">
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -66,7 +67,7 @@
         </li>
     	<li class="clear">
             <label>司机责任险</label>
-            <span><i></i>不计免赔</span>
+            <span id="show"><i></i>不计免赔</span>
             <p>
                 <input type="text" id="test4" placeholder="请选择" class="a_text">
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -74,7 +75,7 @@
         </li>
     	<li class="clear">
             <label>乘客责任险</label>
-            <span><i></i>不计免赔</span>
+            <span id="show"><i></i>不计免赔</span>
             <p>
                 <input type="text" id="test5" placeholder="请选择" class="a_text">
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -82,7 +83,7 @@
         </li>
     	<li class="clear">
             <label>盗抢险</label>
-            <span><i></i>不计免赔</span>
+            <span id="show"><i></i>不计免赔</span>
             <p>
                 <input type="text" id="test6" placeholder="请选择" class="a_text">
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -90,7 +91,7 @@
         </li>
     	<li class="clear">
             <label>涉水险</label>
-            <span><i></i>不计免赔</span>
+            <span id="show"><i></i>不计免赔</span>
             <p>
                 <input type="text" id="test7" placeholder="请选择" class="a_text">
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -106,7 +107,7 @@
         </li>
     	<li class="clear">
             <label>划痕险</label>
-            <span><i></i>不计免赔</span>
+            <span id="show"><i></i>不计免赔</span>
             <p>
                 <input type="text" id="test9" placeholder="请选择" class="a_text">
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -114,7 +115,7 @@
         </li>
     	<li class="clear">
             <label>自燃损失险</label>
-            <span><i></i>不计免赔</span>
+            <span id="show"><i></i>不计免赔</span>
             <p>
                 <input type="text" id="test10" placeholder="请选择" class="a_text">
                 <i class="fa fa-angle-down fa-2x"></i>
